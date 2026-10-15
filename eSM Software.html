@@ -521,6 +521,28 @@ section p.note2{color:rgba(255,255,255,.85)}
 .cta2-b{display:flex;gap:12px;flex-wrap:wrap}
 .cta2-b .bbtn{width:auto;padding:14px 26px;font-size:15px}
 @media (max-width:640px){.cta2{padding:30px 22px}}
+
+/* alternating white / light grey sections */
+:root{--grey:#f2f5f9}
+body{background:#fff}
+.sec.w,#p-home>.trusted,#p-home>.sec:nth-child(even){background:#fff}
+.sec.g,#p-home>.sec:nth-child(odd),#p-home>.why{background:var(--grey)}
+#p-home>.trusted,#p-home>.why{border:0}
+.h2{color:var(--fg)}.h2 em{color:var(--blue)}
+.lead{color:var(--muted)}
+.eyebrow{color:var(--blue)}
+.trusted h2{color:var(--fg)}
+.wh b{color:var(--fg)}.wh span{color:var(--muted)}
+.logo-card{background:var(--grey)}
+.apps{background:linear-gradient(120deg,#0b3566 0%,#0a5aa8 60%,#0a74c4 100%);border:0;color:#fff}
+.apps .h2{color:#fff}.apps .h2 em{color:#ffd774}.apps .eyebrow{color:#ffe29a}
+.bv{border:1px solid var(--line)}
+.mapcard{border:1px solid var(--line)}
+.moff{border:2px solid var(--line)}
+.faqwrap details{border:1px solid var(--line)}
+.ab-partner{border:1px solid var(--line);border-left:6px solid var(--gold)}
+.cc{background:var(--grey);border:0}
+footer{background:#4594d0;border-top:0}
 .page[hidden]{display:none!important}
 </style>
 
@@ -595,7 +617,7 @@ section p.note2{color:rgba(255,255,255,.85)}
     </div>
   </div></div>
 
-  <div class="sec" style="padding-top:0"><div class="wrap split">
+  <div class="sec"><div class="wrap split">
     <div><span class="eyebrow">Stakeholders</span><h2 class="h2">One Platform. <em>Connected Experiences</em> for Everyone.</h2><p class="lead">Tailored features and access for every stakeholder in your institution.</p></div>
     <div class="cards5" id="stake"></div>
   </div></div>
@@ -614,14 +636,14 @@ section p.note2{color:rgba(255,255,255,.85)}
     <div class="sol" id="sol"></div>
   </div></div>
 
-  <div class="sec" style="padding-top:0"><div class="wrap">
+  <div class="sec"><div class="wrap">
     <span class="eyebrow">Core Product Features</span>
     <h2 class="h2">Powerful Modules for <em>Complete Institution Management</em></h2>
     <p class="lead">21 integrated modules to manage every aspect of your institution. Select one to open it in the Feature Book.</p>
     <div class="mods" id="homeMods"></div>
   </div></div>
 
-  <div class="sec" style="padding-top:0"><div class="wrap auto">
+  <div class="sec"><div class="wrap auto">
     <div><span class="eyebrow">Automation</span><h2 class="h2">Automate Routine Work. <em>Focus on Education.</em></h2><p class="lead">Save time, reduce manual work and keep everyone informed with smart automation.</p></div>
     <div class="flow">
       <div><div class="ico s" data-i="mail"></div><b>Automatic Fee Reminders</b>Notify parents about dues and payments.</div>
@@ -631,7 +653,7 @@ section p.note2{color:rgba(255,255,255,.85)}
     </div>
   </div></div>
 
-  <div class="sec" style="padding-top:0"><div class="wrap">
+  <div class="sec"><div class="wrap">
     <span class="eyebrow">Analytics &amp; Reporting</span>
     <h2 class="h2">Turn Institutional Data Into <em>Better Decisions</em></h2>
     <p class="lead">Real-time dashboards and 120+ customizable reports across academic, administrative and financial operations.</p>
@@ -641,10 +663,10 @@ section p.note2{color:rgba(255,255,255,.85)}
       <div class="kc"><small>Outstanding Dues</small><b>PKR 2.4M</b><span class="d dn">▼ 8% from last month</span><svg viewBox="0 0 100 30" preserveAspectRatio="none"><polyline points="0,6 20,10 40,9 60,16 80,20 100,25" fill="none" stroke="var(--red-i)" stroke-width="2"/></svg></div>
       <div class="kc"><small>Admissions</small><b>320</b><span class="d">▲ 18% from last month</span><svg viewBox="0 0 100 30" preserveAspectRatio="none"><polyline points="0,24 20,22 40,18 60,19 80,10 100,6" fill="none" stroke="var(--orange-i)" stroke-width="2"/></svg></div>
     </div>
-    <p style="font-size:12px;color:rgba(255,255,255,.85);margin-top:10px">Sample figures shown for illustration.</p>
+    <p style="font-size:12px;color:var(--muted);margin-top:10px">Sample figures shown for illustration.</p>
   </div></div>
 
-  <div class="sec" style="padding-top:0"><div class="wrap">
+  <div class="sec"><div class="wrap">
     <div class="apps">
       <div>
         <span class="eyebrow" style="color:inherit;opacity:.7">Mobile Apps</span>
@@ -660,24 +682,24 @@ section p.note2{color:rgba(255,255,255,.85)}
     </div>
   </div></div>
 
-  <div class="sec" style="padding-top:0"><div class="wrap">
+  <div class="sec"><div class="wrap">
     <div class="kc-head"><div><span class="eyebrow">Knowledge Center</span><h2 class="h2">Guides for running a <em>smarter institution</em></h2><p class="lead">Practical articles on fees, attendance, parent communication and school management.</p></div><button class="btn pri" data-go="blog" style="background:var(--gold);color:#3a2800;border-color:var(--gold);box-shadow:none">Visit Blog →</button></div>
     <div class="bgrid" id="homeBlog"></div>
   </div></div>
 
-  <div class="sec" style="padding-top:0"><div class="wrap faqwrap">
+  <div class="sec"><div class="wrap faqwrap">
     <div><span class="eyebrow">FAQ</span><h2 class="h2">Frequently asked <em>questions</em></h2><p class="lead">Quick answers about the app, payments, reports, training and data security.</p><p style="margin-top:18px"><button class="btn pri" data-demo style="background:var(--gold);color:#3a2800;border-color:var(--gold);box-shadow:none">Still have questions? Book a demo</button></p></div>
     <div id="homeFaq"></div>
   </div></div>
 
-  <div class="wrap"><div class="cta2">
+  <div class="sec g"><div class="wrap"><div class="cta2">
     <div class="cta2-tx">
       <span class="bh-eye">Free trial</span>
       <h3>Start your free trial of eSM</h3>
       <p>See how admissions, fees, attendance and reports work together in one platform.</p>
     </div>
     <div class="cta2-b"><button class="bbtn gold" data-demo>Get Started →</button><button class="bbtn ghost" data-go="contact">Talk to our team</button></div>
-  </div></div>
+  </div></div></div>
 </section>
 
 <!-- ============ ABOUT ============ -->
@@ -698,8 +720,7 @@ section p.note2{color:rgba(255,255,255,.85)}
 <g transform="translate(76 54)"><circle r="30" fill="#fff"/><path d="M-12 14V-2M0 14V-14M12 14V4" stroke="#f2ae1d" stroke-width="6" stroke-linecap="round"/></g>
 </svg></div>
   </div></div>
-  <div class="wrap">
-    <div class="sec" style="padding-bottom:24px">
+  <div class="sec w"><div class="wrap">
       <div class="ab-intro">
         <div>
           <span class="eyebrow" style="display:flex;align-items:center;gap:12px">Who we are<i style="flex:0 0 60px;height:3px;background:var(--gold);border-radius:2px"></i></span>
@@ -714,31 +735,30 @@ section p.note2{color:rgba(255,255,255,.85)}
           <p style="margin-top:14px">and many others across Pakistan.</p>
         </div>
       </div>
-    </div>
+  </div></div>
 
-    <div class="sec" style="padding-bottom:24px">
+  <div class="sec g"><div class="wrap">
       <span class="eyebrow">Mission &amp; Vision</span>
       <h2 class="h2">What drives <em>everything we build</em></h2>
       <div class="mv">
         <div class="box mv-card"><div class="ico s" data-i="bulb" style="width:54px;height:54px"></div><h3>Our Mission</h3><p>To give schools, colleges and institution groups a reliable, affordable and easy-to-use system that streamlines administration, improves communication among everyone involved and lets educators spend their time on teaching.</p></div>
         <div class="box mv-card"><div class="ico o" data-i="globe" style="width:54px;height:54px"></div><h3>Our Vision</h3><p>To be the most trusted school management partner in Pakistan, helping every institution run smoothly and achieve academic excellence through continuous improvement and innovation.</p></div>
       </div>
-    </div>
+  </div></div>
 
-    <div class="ab-partner">
+  <div class="sec w"><div class="wrap"><div class="ab-partner">
       <div><h3>A strategic partner, not just a vendor</h3><p>We aim to be a strategic partner for your organization's growth. Experience the eSM difference today: streamlined operations, better communication and academic excellence.</p></div>
       <button class="btn pri" data-demo>Book a Free Demo →</button>
-    </div>
+    </div></div></div>
 
-    <div class="sec" style="padding-bottom:24px">
+  <div class="sec g"><div class="wrap">
       <span class="eyebrow">Solutions</span>
       <h2 class="h2">IT solutions for <em>diverse education verticals</em></h2>
       <p class="lead">Manage your school from one place, with features that cover all departments. The software is powerful, time-saving, efficient, productive and reliable.</p>
       <div class="ov" id="aboutFeat"></div>
-    </div>
 
-    <div class="box" style="margin-bottom:24px;text-align:center;padding:32px"><h3 style="font-size:22px">One of the most reliable school software products in Pakistan</h3><p style="max-width:60ch;margin:8px auto 0">The Electronic School Management System (eSM) is a multipurpose system trusted by well-known institutions nationwide.</p></div>
-  </div>
+    <div class="box" style="margin-top:28px;text-align:center;padding:32px"><h3 style="font-size:22px">One of the most reliable school software products in Pakistan</h3><p style="max-width:60ch;margin:8px auto 0">The Electronic School Management System (eSM) is a multipurpose system trusted by well-known institutions nationwide.</p></div>
+  </div></div>
 </section>
 
 <!-- ============ FEATURE BOOK ============ -->
@@ -754,11 +774,13 @@ section p.note2{color:rgba(255,255,255,.85)}
 <circle cx="360" cy="46" r="26" fill="#fff"/><path d="M349 48l8 8 14-16" stroke="#12a37f" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="210" y="40" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-weight="800" font-size="16" fill="#fff" opacity=".9">21 MODULES</text>
 </svg></div></div></div>
-  <div class="wrap">
+  <div class="sec w"><div class="wrap">
     <div class="fb"><div class="fb-list" id="fbList" role="tablist"></div><div class="fb-detail" id="fbDetail" aria-live="polite"></div></div>
-    <h2 class="h2" style="margin:56px 0 18px">Frequently <em>Asked Questions</em></h2>
+  </div></div>
+  <div class="sec g"><div class="wrap">
+    <h2 class="h2" style="margin:0 0 18px">Frequently <em>Asked Questions</em></h2>
     <div id="faq"></div>
-  </div>
+  </div></div>
 </section>
 
 <!-- ============ CLIENTS ============ -->
@@ -771,14 +793,14 @@ section p.note2{color:rgba(255,255,255,.85)}
 <g font-family="Plus Jakarta Sans,sans-serif" font-weight="800" font-size="12" text-anchor="middle" fill="#fff"><text x="85" y="272">SCHOOLS</text><text x="210" y="272">COLLEGES</text><text x="338" y="272">UNIVERSITIES</text></g>
 <g transform="translate(210 26)"><circle r="20" fill="#fff"/><path d="M-10 4l7 7 14-15" stroke="#2984c6" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
 </svg></div></div></div>
-  <div class="wrap sec" style="padding-top:8px">
+  <div class="sec w"><div class="wrap">
     <div class="tabs" role="tablist" id="ctabs">
       <button role="tab" data-c="schools" aria-selected="true">Schools</button>
       <button role="tab" data-c="colleges" aria-selected="false">Colleges</button>
       <button role="tab" data-c="universities" aria-selected="false">Universities</button>
     </div>
     <div class="cgrid" id="cgrid"></div>
-  </div>
+  </div></div>
 </section>
 
 <section class="page" id="p-blog" hidden>
@@ -839,7 +861,7 @@ section p.note2{color:rgba(255,255,255,.85)}
 <g transform="translate(112 214)"><path d="M0 -42c-16 0-28 12-28 27 0 20 28 44 28 44s28-24 28-44c0-15-12-27-28-27z" fill="#12a37f"/><circle cy="-15" r="10" fill="#fff"/></g>
 <circle cx="350" cy="196" r="22" fill="#fff"/><text x="350" y="203" text-anchor="middle" font-family="Plus Jakarta Sans,sans-serif" font-weight="800" font-size="16" fill="#2984c6">24x7</text>
 </svg></div></div></div>
-  <div class="wrap"><div class="cgrid2">
+  <div class="sec g"><div class="wrap"><div class="cgrid2">
     <div class="box"><h3>Request a demo</h3>
       <form id="form">
         <input id="f-name" placeholder="Your name" required>
@@ -856,8 +878,8 @@ section p.note2{color:rgba(255,255,255,.85)}
       <div class="office"><b>Karachi (Regional Office)</b><span>B-174, 1st Floor, Block 3, Gulistan-e-Jauhar, Karachi</span></div>
       <div class="office"><b>USA Office</b><span>5900 Balcones Drive STE 7383, Austin, TX 78731, USA</span></div>
     </div>
-  </div></div>
-  <div class="wrap sec" style="padding-top:8px">
+  </div></div></div>
+  <div class="sec w"><div class="wrap">
     <span class="eyebrow">Find us</span>
     <h2 class="h2">Our offices <em>on the map</em></h2>
     <p class="lead">Three offices in two countries. Select an office to see its address and open it in Google Maps.</p>
@@ -872,7 +894,7 @@ section p.note2{color:rgba(255,255,255,.85)}
       </div>
       <div class="mlist" id="mlist"></div>
     </div>
-  </div>
+  </div></div>
 </section>
 </main>
 
